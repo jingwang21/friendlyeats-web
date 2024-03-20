@@ -1,0 +1,69 @@
+
+
+
+firebase --version
+
+[debug] [2024-03-20T19:06:20.472Z] ----------------------------------------------------------------------
+[debug] [2024-03-20T19:06:20.473Z] Command:       /usr/local/bin/node /Users/jingwang/.npm-global/bin/firebase use --add
+[debug] [2024-03-20T19:06:20.474Z] CLI Version:   13.5.2
+[debug] [2024-03-20T19:06:20.474Z] Platform:      darwin
+[debug] [2024-03-20T19:06:20.474Z] Node Version:  v21.7.1
+[debug] [2024-03-20T19:06:20.474Z] Time:          Wed Mar 20 2024 14:06:20 GMT-0500 (Central Daylight Time)
+[debug] [2024-03-20T19:06:20.474Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-20T19:06:20.500Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-20T19:06:20.500Z] > authorizing via signed-in user (jwang2586@wisc.edu)
+[debug] [2024-03-20T19:06:20.501Z] > refreshing access token with scopes: []
+[debug] [2024-03-20T19:06:20.501Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-20T19:06:20.501Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-20T19:06:20.754Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-03-20T19:06:20.754Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-20T19:06:20.754Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-03-20T19:06:20.900Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/auth.js:142:12)
+    at refreshTokens (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/auth.js:515:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/apiv2.js:161:22)
+    at async Client.addAuthHeader (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/apiv2.js:152:21)
+    at async Client.request (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/apiv2.js:105:34)
+    at async getProjectPage (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/management/projects.js:238:17)
+    at async getFirebaseProjectPage (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/management/projects.js:255:23)
+    at async listFirebaseProjects (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/management/projects.js:286:29)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2024-03-20T19:06:43.290Z] ----------------------------------------------------------------------
+[debug] [2024-03-20T19:06:43.291Z] Command:       /usr/local/bin/node /Users/jingwang/.npm-global/bin/firebase use --add
+[debug] [2024-03-20T19:06:43.292Z] CLI Version:   13.5.2
+[debug] [2024-03-20T19:06:43.292Z] Platform:      darwin
+[debug] [2024-03-20T19:06:43.292Z] Node Version:  v21.7.1
+[debug] [2024-03-20T19:06:43.292Z] Time:          Wed Mar 20 2024 14:06:43 GMT-0500 (Central Daylight Time)
+[debug] [2024-03-20T19:06:43.292Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-20T19:06:43.318Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-20T19:06:43.318Z] > authorizing via signed-in user (jwang2586@wisc.edu)
+[debug] [2024-03-20T19:06:43.319Z] > refreshing access token with scopes: []
+[debug] [2024-03-20T19:06:43.320Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-20T19:06:43.320Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-20T19:06:43.753Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-03-20T19:06:43.754Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-20T19:06:43.754Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-03-20T19:06:44.053Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/auth.js:142:12)
+    at refreshTokens (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/auth.js:515:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/apiv2.js:161:22)
+    at async Client.addAuthHeader (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/apiv2.js:152:21)
+    at async Client.request (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/apiv2.js:105:34)
+    at async getProjectPage (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/management/projects.js:238:17)
+    at async getFirebaseProjectPage (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/management/projects.js:255:23)
+    at async listFirebaseProjects (/Users/jingwang/.npm-global/lib/node_modules/firebase-tools/lib/management/projects.js:286:29)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
